@@ -1,0 +1,15 @@
+<html>
+    <header>
+        <script type="text/javascript">
+            function copyToClipboard() \{
+                console.log("invoked");
+                let el = document.getElementById("shortened_link");
+                navigator.clipboard.writeText(el.innerText);
+            }
+        </script>
+    </header>
+    <body>
+        Your shortened url is <a id="shortened_link" href="http://127.0.0.1:3000/{id}">http://127.0.0.1:3000/{id}</a></br></br>
+        <button onclick="copyToClipboard()">Click here to copy to clipboard</button>
+    </body>
+</html>
